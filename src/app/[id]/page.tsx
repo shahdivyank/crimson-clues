@@ -1,3 +1,4 @@
+import Footer from "@/components/footer";
 import AnimatedNumber from "@/components/number";
 import {
   Card,
@@ -31,10 +32,26 @@ interface props {
   params: Promise<Record<string, string>>;
 }
 
+const colors: Record<string, string> = {
+  gray: "border-[#333333]",
+  crimson: "border-[#D50032]",
+  blue: "border-[#6A7F9C]",
+};
+
 const Page = async ({ params }: props) => {
   const { id } = await params;
 
-  const { name, title, cases, kills, years, description, image } = contents[id];
+  const {
+    name,
+    title,
+    cases,
+    kills,
+    years,
+    description,
+    image,
+    color,
+    offset,
+  } = contents[id];
 
   return (
     <div className="flex h-screen w-screen items-center justify-center">
@@ -43,7 +60,7 @@ const Page = async ({ params }: props) => {
           <Image
             src={image as StaticImageData}
             alt="Profile"
-            className="w-1/3 rounded-full"
+            className={`w-1/3 rounded-full border-3 ${colors[color as string]}`}
           />
           <div className="ml-3 w-full text-left">
             <CardTitle className="text-2xl">{title as string}</CardTitle>
@@ -70,6 +87,8 @@ const Page = async ({ params }: props) => {
 
           <p className="my-4 text-center">{description as string}</p>
         </CardContent>
+
+        <Footer id={id} offset={offset as number} />
       </Card>
     </div>
   );
