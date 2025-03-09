@@ -1,3 +1,4 @@
+import AnimatedNumber from "@/components/number";
 import {
   Card,
   CardContent,
@@ -37,7 +38,7 @@ const Page = async ({ params }: props) => {
 
   return (
     <div className="flex h-screen w-screen items-center justify-center">
-      <Card className="w-11/12">
+      <Card className="w-11/12 bg-[#F0E8D9]">
         <CardHeader className="flex-row items-center text-center">
           <Image
             src={image as StaticImageData}
@@ -55,15 +56,15 @@ const Page = async ({ params }: props) => {
           <div className="flex items-center justify-around">
             <div className="text-center">
               <p>Cases</p>
-              <p>{cases as string}</p>
+              <AnimatedNumber target={cases as number} />
             </div>
             <div className="text-center">
               <p>Kills</p>
-              <p>{kills as string}</p>
+              <AnimatedNumber target={kills as number} />
             </div>
             <div className="text-center">
               <p>Years</p>
-              <p>{years as string}</p>
+              <AnimatedNumber target={years as number} />
             </div>
           </div>
 
