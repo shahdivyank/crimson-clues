@@ -9,17 +9,18 @@ import {
 } from "@/components/ui/card";
 import { contents } from "@/data/contents";
 import Image, { StaticImageData } from "next/image";
+import { Suspense } from "react";
 
 export const generateStaticParams = () => {
   const ids = [
     "372",
     "815",
-    "463",
+    // "463",
     "921",
     "107",
-    "689",
+    // "689",
     "254",
-    "348",
+    // "348",
     "576",
     "193",
     "412",
@@ -87,8 +88,9 @@ const Page = async ({ params }: props) => {
 
           <p className="my-4 text-center">{description as string}</p>
         </CardContent>
-
-        <Footer id={id} offset={offset as number} />
+        <Suspense fallback={<div>Loading...</div>}>
+          <Footer id={id} offset={offset as number} />
+        </Suspense>
       </Card>
     </div>
   );
