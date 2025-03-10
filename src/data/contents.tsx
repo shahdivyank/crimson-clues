@@ -1,11 +1,11 @@
 import Sachin from "@/public/sachin.jpeg";
 import Amanda from "@/public/amanda.webp";
-import Amir from "@/public/amir.png";
+// import Amir from "@/public/amir.png";
 import Austin from "@/public/austin.webp";
 import Emily from "@/public/emily.png";
-import Evi from "@/public/evi.webp";
+// import Evi from "@/public/evi.webp";
 import Hailee from "@/public/hailee.jpg";
-import Pranoy from "@/public/pranoy.webp";
+// import Pranoy from "@/public/pranoy.webp";
 import Raidah from "@/public/raidah.webp";
 import Samarth from "@/public/samarth.jpeg";
 import Yogitha from "@/public/yogitha.webp";
@@ -38,20 +38,20 @@ export const contents: Record<
       "A sage of ancient wisdom, Hailee possesses the ability to calm even the fiercest of tempers. Her voice is said to mend broken spirits, and her guidance has saved many from the brink of darkness.",
     image: Hailee,
     color: "crimson",
-    offset: 0,
-  },
-  "463": {
-    name: "Evelyn Aguirre",
-    title: "The Artist",
-    cases: 14,
-    kills: 5,
-    years: 3,
-    description:
-      "A mystical illusionist who can bring her imagination to life, Evi paints worlds with a mere flick of her wrist. Her creations are both beautiful and deadly, capable of entrancing enemies or protecting her allies.",
-    image: Evi,
-    color: "crimson",
     offset: 1,
   },
+  // "463": {
+  //   name: "Evelyn Aguirre",
+  //   title: "The Artist",
+  //   cases: 14,
+  //   kills: 5,
+  //   years: 3,
+  //   description:
+  //     "A mystical illusionist who can bring her imagination to life, Evi paints worlds with a mere flick of her wrist. Her creations are both beautiful and deadly, capable of entrancing enemies or protecting her allies.",
+  //   image: Evi,
+  //   color: "crimson",
+  //   offset: 1,
+  // },
   "921": {
     name: "Amanda Ly",
     title: "The Scientist",
@@ -76,18 +76,18 @@ export const contents: Record<
     color: "gray",
     offset: 0,
   },
-  "689": {
-    name: "Amir Golshani",
-    title: "The Athlete",
-    cases: 20,
-    kills: 8,
-    years: 5,
-    description:
-      "Blessed with superhuman strength and agility, Amir is a warrior who never backs down from a challenge. His unbreakable will and relentless spirit make him a force of nature on the battlefield.",
-    image: Amir,
-    color: "gray",
-    offset: 0,
-  },
+  // "689": {
+  //   name: "Amir Golshani",
+  //   title: "The Athlete",
+  //   cases: 20,
+  //   kills: 8,
+  //   years: 5,
+  //   description:
+  //     "Blessed with superhuman strength and agility, Amir is a warrior who never backs down from a challenge. His unbreakable will and relentless spirit make him a force of nature on the battlefield.",
+  //   image: Amir,
+  //   color: "gray",
+  //   offset: 0,
+  // },
   "254": {
     name: "Raidah Fairooz",
     title: "The Pescatarian",
@@ -109,21 +109,21 @@ export const contents: Record<
     description:
       "A cunning merchant-lord who thrives in the shadows of power, Austin strikes deals with kings and monsters alike. He can turn any loss into a profit — and any enemy into an ally if the price is right.",
     image: Austin,
-    color: "gray",
-    offset: 0,
-  },
-  "348": {
-    name: "Pranoy Giri",
-    title: "The Engineer",
-    cases: 23,
-    kills: 5,
-    years: 6,
-    description:
-      "A master of machines and constructs, Pranoy builds weapons, armor, and mechanical companions to aid him in his journey. His mind buzzes with endless invention, and his creations are often smarter than his foes.",
-    image: Pranoy,
     color: "blue",
     offset: 0,
   },
+  // "348": {
+  //   name: "Pranoy Giri",
+  //   title: "The Engineer",
+  //   cases: 23,
+  //   kills: 5,
+  //   years: 6,
+  //   description:
+  //     "A master of machines and constructs, Pranoy builds weapons, armor, and mechanical companions to aid him in his journey. His mind buzzes with endless invention, and his creations are often smarter than his foes.",
+  //   image: Pranoy,
+  //   color: "blue",
+  //   offset: 0,
+  // },
   "576": {
     name: "Yogitha Shastri",
     title: "The Yapper",
